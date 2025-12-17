@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="sw">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YASSER TECH — Portfolio</title>
+  <meta name="description" content="Portfolio ya YASSER TECH — Web developer | WhatsApp Bots | AI integrations" />
+  <style>
+    /* ====== BASE ====== */
+    :root{
+      --bg:#0b1020; --card:#0f1626; --accent:#00eaff; --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,var(--bg),#071022);color:#e6eef6}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1100px;margin:40px auto;padding:0 20px}/* ====== HEADER / NAV ====== */
+header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:56px;height:56px;background:linear-gradient(135deg,#064e5b,#007b92);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;letter-spacing:1px}
+.brand h1{font-size:20px;margin:0}
+nav{display:flex;gap:14px;align-items:center}
+nav a{padding:8px 10px;border-radius:8px;font-weight:600;color:var(--muted)}
+nav a.cta{background:var(--accent);color:#021018}
+
+/* ====== HERO ====== */
+.hero{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center;margin-top:30px}
+.intro h2{margin:0;font-size:34px}
+.intro p{color:var(--muted);font-size:15px}
+.actions{margin-top:18px;display:flex;gap:12px}
+.btn{padding:10px 14px;border-radius:10px;font-weight:700;border:none;cursor:pointer}
+.btn-primary{background:var(--accent);color:#021018}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+/* ====== CARD ====== */
+.card{background:linear-gradient(180deg,var(--card),rgba(10,12,18,0.6));padding:18px;border-radius:12px;box-shadow:0 6px 30px rgba(2,6,12,0.6)}
+
+/* ====== SKILLS / PROJECTS ====== */
+.skills{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.skill{background:var(--glass);padding:8px 10px;border-radius:10px;color:var(--muted);font-weight:600}
+
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:18px}
+.project{padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+.project h3{margin:0 0 8px 0}
+.project p{color:var(--muted);font-size:14px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.tag{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted)}
+
+/* ====== CONTACT & FOOTER ====== */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+footer{margin-top:30px;color:var(--muted);text-align:center;padding:30px 0}
+
+/* ====== AI BOX ====== */
+.ai-box{display:flex;flex-direction:column;gap:10px}
+.ai-input{padding:10px;border-radius:10px;border:none;font-size:15px}
+.ai-output{white-space:pre-wrap;background:rgba(0,0,0,0.25);padding:12px;border-radius:8px;color:#dffaff;min-height:60px}
+
+/* ====== RESPONSIVE ====== */
+@media(max-width:900px){.hero{grid-template-columns:1fr}.container{margin:20px auto}}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">𝚈𝙰𝚂𝚂𝙴𝚁 𝚃𝙴𝙲𝙷</div>
+        <div>
+          <h1>YASSER TECH</h1>⁸
+          <div style="font-size:12px;color:var(--muted)">Developer • WhatsApp Bots • AI</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="https://wa.me/255719598739?text=Hi%20Yasser!" target="_blank">WhatsApp</a>
+      </nav>
+    </header><section class="hero">
+  <div>
+    <div class="card intro">
+      <h2>𝚆𝙴𝙻𝙲𝙾𝙼 𝚃𝙾 𝚈𝙰𝚂𝙴𝚁 𝚃𝚁𝙲𝙷</h2>
+      <p>Natengeneza ufumbuzi wa web zinazofanya kazi vizuri, zinaonekana za kisasa, na zinaweza kuunganishwa na WhatsApp au AI chatbots.</p>
+
+      <div class="actions">
+        <button class="btn btn-primary" onclick="scrollToSection('#projects')">Tazama Projects</button>
+        <button class="btn btn-ghost" onclick="scrollToSection('#contact')">Nisogeee</button>
+      </div>
+
+      <div style="margin-top:16px">
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Node.js</div>
+          <div class="skill">WhatsApp Bots</div>
+          <div class="skill">AI / OpenAI</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <aside>
+    <div class="card">
+      <h3>AI Help</h3>
+      <p style="color:var(--muted)">Uliza swali fupi hapa, AI atakupa jibu la moja kwa moja (sample offline response).</p>
+      <div class="ai-box">
+        <input id="aiQ" class="ai-input" placeholder="Andika swali (Sw/En)..." />
+        <button class="btn btn-primary" onclick="runOfflineAI()">Uliza AI</button>
+        <div id="aiOut" class="ai-output">Jibu la AI litakuja hapa.</div>
+      </div>
+
+      <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,0.04)" />
+
+      <h4>Quick contact</h4>
+      <p style="color:var(--muted);font-size:14px">WhatsApp: <a href="https://wa.me/255719598739" target="_blank">+255 719 598 739</a></p>
+      <p style="color:var(--muted);font-size:14px">Email: <a href="mailto:yassertech@example.com">yassirjamar</a></p>
+    </div>
+  </aside>
+</section>
+
+<section id="projects">
+  <h2 style="margin-top:28px">Projects</h2>
+  <div class="projects">
+    <!-- Example project 1 -->
+    <div class="project card">
+      <h3>WhatsApp AI Bot</h3>
+      <p>Bot ya WhatsApp inayojibu maswali, FAQs, na kuunganishwa na OpenAI. Inatumia webhook na database ya user.</p>
+      <div class="tags"><div class="tag">Node.js</div><div class="tag">Twilio/WhatsApp</div><div class="tag">OpenAI</div></div>
+      <div style="margin-top:10px"><a href="#" onclick="openProject('https://github.com/yourname/whatsapp-bot')">View repo →</a></div>
+    </div>
+
+    <!-- Example project 2 -->
+    <div class="project card">
+      <h3>Portfolio Website (YASSER TECH)</h3>
+      <p>Website responsive, dark-mode ready, easy to deploy Vercel/GitHub Pages.</p>
+      <div class="tags"><div class="tag">HTML</div><div class="tag">CSS</div><div class="tag">Vercel</div></div>
+      <div style="margin-top:10px"><a href="#" onclick="openProject('https://github.com/yourname/portfolio')">View repo →</a></div>
+    </div>
+
+    <!-- Example project 3 -->
+    <div class="project card">
+      <h3>Link Generator</h3>
+      <p>Tool ndogo ya kutengeneza WhatsApp direct links, QR na short links kwa biashara ndogo.</p>
+      <div class="tags"><div class="tag">JavaScript</div><div class="tag">QR</div></div>
+      <div style="margin-top:10px"><a href="#" onclick="openProject('https://github.com/yourname/link-generator')">View repo →</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="margin-top:28px">
+  <div class="card">
+    <h2>About Me</h2>
+    <p style="color:var(--muted)">Naitwa Yassir. Ninaibua solutions za web na bots ambazo zinawasaidia wateja kupata leads, kujibu wateja automati, na kuongeza ufanisi wa biashara mtandaoni.</p>
+    <p style="color:var(--muted)">Nina uzoefu wa Git/GitHub, Vercel, Node.js, na kutengeneza UI za kisasa.</p>
+  </div>
+</section>
+
+<section id="contact" style="margin-top:18px">
+  <h2>Contact</h2>
+  <div class="contact-grid">
+    <div class="card">
+      <h3>Hit me up</h3>
+      <p style="color:var(--muted)">Niandikie ujumbe mfupi au nitumie WhatsApp.</p>
+      <form onsubmit="sendContact(event)">
+        <input id="name" placeholder="Jina" style="width:100%;padding:10px;border-radius:8px;border:none;margin-bottom:8px" required />
+        <input id="email" placeholder="Email" style="width:100%;padding:10px;border-radius:8px;border:none;margin-bottom:8px" required />
+        <textarea id="msg" placeholder="Ujumbe" style="width:100%;padding:10px;border-radius:8px;border:none;height:100px" required></textarea>
+        <div style="margin-top:10px;display:flex;gap:8px">
+          <button class="btn btn-primary" type="submit">Tuma</button>
+          <a class="btn btn-ghost" href="https://wa.me/255719598739?text=Hi%20Yasser,%20ninataka%20huduma" target="_blank">Send on WhatsApp</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3>Quick Links</h3>
+      <p style="color:var(--muted)">GitHub, LinkedIn, Instagram — weka links zako hapa kwa urahisi.</p>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px">
+        <a href="#">GitHub → github.com/yourname</a>
+        <a href="#">LinkedIn → https://whatsapp.com/channel/0029Vb6PeozICVfg7iMWVW30/a>
+        <a href="#">Instagram → instagram.com/yourname</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 YASSER TECH • Built with ❤️ • <span style="color:var(--muted)">Vercel / GitHub ready</span>
+</footer>
+
+  </div>  <script>
+    // Small client-side interactions — replace offline AI with real API later
+    function scrollToSection(sel){document.querySelector(sel).scrollIntoView({behavior:'smooth'})}
+    function runOfflineAI(){
+      const q=document.getElementById('aiQ').value.trim();
+      const out=document.getElementById('aiOut');
+      if(!q){out.innerText='Tafadhali andika swali.';return}
+      // sample heuristic replies
+      if(/price|gharama|bei|cost/i.test(q)) out.innerText='Unataka estimate? Niambie: 1) aina ya project 2) timeframe (wiki/ngazi) 3) budget.';
+      else if(/deploy|vercel|git/i.test(q)) out.innerText='Nikuonyeshe jinsi ya deploy: 1) Create repo 2) Connect to Vercel 3) Set build command 4) Deploy. Unataka nitengenezee script?';
+      else if(/whatsapp|bot/i.test(q)) out.innerText='Bot idea: Auto-welcome + FAQ + Quick-links + Order flow. Nikutengenezee template ya Node.js?';
+      else out.innerText='Nimepokea swali. Nitakupa mwanga: andika aina ya project na nitakuwa na mfano wa code.';
+    }
+
+    function openProject(url){
+      // in this demo we prevent navigation; in real site replace with real urls
+      if(!url) return alert('Repo haina URL. Badilisha link kwenye code.');
+      window.open(url,'_blank')
+    }
+
+    function sendContact(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value;
+      const email=document.getElementById('email').value;
+      const msg=document.getElementById('msg').value;
+      alert('Asante '+name+"! Nimepokea ujumbe wako. Nitawasiliana ndani ya masaa 24.");
+      // TODO: replace with real form handler (Netlify/Vercel function or Formspree)
+    }
+  </script>  <!--
+    NEXT STEPS (how you can use this file):
+    1) Copy this file as index.html and open locally to preview.
+    2) To split files: create style.css (move <style> content) and script.js (move <script> content) then link them.
+    3) Add your real GitHub links and WhatsApp number where indicated.
+    4) To deploy: create a GitHub repo, push files, then import to Vercel (default settings).
+
+    WANT ME TO DO MORE? I can:
+      • Split into index.html + style.css + script.js
+      • Generate ready-to-deploy GitHub repo (zip)
+      • Deploy to Vercel and connect domain (you'll need to give repo access)
+      • Customize colors/logos/text/samples
+
+    I prepared everything above — sema tu "Split" ili niweke files tofauti, au "Deploy" ili niandae hatua za deployment.
+  --><body>
+  </html>
